@@ -1,6 +1,8 @@
 import { LandingNav } from '../components/LandingNav';
 import { Award, Users, Target, Zap, ArrowRight } from 'lucide-react';
 import './LandingPage.css';
+import heroBg from "../assets/taekwondo_hero_bg.png";
+
 
 export function LandingPage() {
   return (
@@ -10,7 +12,7 @@ export function LandingPage() {
       {/* Hero Section */}
       <section id="home" className="hero-section">
         <img 
-          src="/src/assets/taekwondo_hero_bg.png" 
+          src={heroBg}
           alt="Taekwondo Training" 
           className="hero-bg"
         />
