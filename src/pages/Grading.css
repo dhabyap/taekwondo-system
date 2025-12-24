@@ -1,0 +1,68 @@
+.grading-page {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.grading-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.student-card {
+  background: var(--color-white);
+  padding: var(--spacing-lg);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  border-top: 4px solid transparent; /* Dynamic border color based on belt */
+}
+
+.student-info h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.current-belt {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.next-belt-info {
+  background-color: var(--color-gray-100);
+  padding: var(--spacing-md);
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.next-belt-info p {
+  margin-bottom: 0.25rem;
+  color: var(--color-text-light);
+}
+
+.next-belt-info strong {
+  color: var(--color-black);
+}
+
+.promote-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 0.375rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.promote-btn:hover {
+  background-color: #333;
+}
