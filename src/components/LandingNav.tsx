@@ -22,16 +22,16 @@ export function LandingNav() {
         <div className="nav-logo">TAEKWONDO</div>
         
         <ul className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#programs">Programs</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#programs">Program</a></li>
+          <li><a href="#features">Fitur</a></li>
+          <li><a href="#testimonials">Testimoni</a></li>
+          <li><a href="#contact">Kontak</a></li>
         </ul>
         
         <div className="nav-actions">
           <Link to="/admin" className="nav-admin-btn">
-            Admin Login
+            Masuk Admin
           </Link>
           
           <button 

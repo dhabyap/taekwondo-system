@@ -8,12 +8,12 @@ export function Layout() {
   
   const getTitle = () => {
     switch(location.pathname) {
-      case '/admin': return 'Dashboard';
-      case '/admin/members': return 'Members';
-      case '/admin/attendance': return 'Attendance';
-      case '/admin/schedule': return 'Schedule';
-      case '/admin/grading': return 'Grading';
-      default: return 'Taekwondo System';
+      case '/admin': return 'Beranda';
+      case '/admin/members': return 'Anggota';
+      case '/admin/attendance': return 'Kehadiran';
+      case '/admin/schedule': return 'Jadwal';
+      case '/admin/grading': return 'Kenaikan Sabuk';
+      default: return 'Sistem Taekwondo';
     }
   };
 

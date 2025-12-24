@@ -27,45 +27,45 @@ export function Attendance() {
   const saveAttendance = () => {
     // Here we would typically make an API call
     console.log('Saving attendance for class', selectedClassId, attendance);
-    alert('Attendance saved successfully!');
+    alert('Kehadiran berhasil disimpan!');
   };
 
   return (
     <div className="attendance-page">
       <div className="attendance-controls">
         <div className="control-group">
-          <label>Select Class Session</label>
+          <label>Pilih Sesi Kelas</label>
           <select 
             value={selectedClassId}
             onChange={(e) => setSelectedClassId(e.target.value)}
           >
             {MOCK_CLASSES.map(cls => (
               <option key={cls.id} value={cls.id}>
-                {cls.name} — {cls.date} at {cls.time} ({cls.instructor})
+                {cls.name} — {cls.date} pukul {cls.time} ({cls.instructor})
               </option>
             ))}
           </select>
         </div>
         <button className="btn btn-primary" onClick={saveAttendance}>
           <CheckCircle size={18} style={{ marginRight: '8px', display: 'inline' }} />
-          Save Attendance
+          Simpan Kehadiran
         </button>
       </div>
 
       {selectedClass && (
         <div className="attendance-list">
           <div className="attendance-list-header">
-            <span>Student Name</span>
-            <span>Belt</span>
+            <span>Nama Siswa</span>
+            <span>Sabuk</span>
             <span>Status</span>
-            <span className="mark-all-btn" onClick={markAll}>Mark All</span>
+            <span className="mark-all-btn" onClick={markAll}>Tandai Semua</span>
           </div>
           
           {MOCK_STUDENTS.filter(s => s.status === 'Active').map(student => (
             <div key={student.id} className="attendance-item">
               <span style={{ fontWeight: 500 }}>{student.name}</span>
-              <span className={`belt-badge belt-${student.belt}`}>{student.belt}</span>
-              <span className={`status-badge status-${student.status}`}>{student.status}</span>
+              <span className={`belt-badge belt-${student.belt}`}>Sabuk {student.belt === 'White' ? 'Putih' : student.belt === 'Yellow' ? 'Kuning' : student.belt === 'Green' ? 'Hijau' : student.belt === 'Blue' ? 'Biru' : student.belt === 'Red' ? 'Merah' : 'Hitam'}</span>
+              <span className={`status-badge status-${student.status}`}>{student.status === 'Active' ? 'Aktif' : 'Tidak Aktif'}</span>
               <div className="checkbox-wrapper">
                 <input 
                   type="checkbox" 

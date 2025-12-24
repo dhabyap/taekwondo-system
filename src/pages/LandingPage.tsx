@@ -19,17 +19,17 @@ export function LandingPage() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <h1 className="hero-title">
-            Master the Art of <span className="highlight">Taekwondo</span>
+            Kuasai Seni <span className="highlight">Taekwondo</span>
           </h1>
           <p className="hero-subtitle">
-            Transform your mind and body through discipline, strength, and martial arts excellence
+            Transformasikan pikiran dan tubuh Anda melalui disiplin, kekuatan, dan keunggulan seni bela diri
           </p>
           <div className="hero-buttons">
             <a href="#programs" className="btn btn-primary btn-lg">
-              Start Your Journey <ArrowRight size={20} />
+              Mulai Perjalanan Anda <ArrowRight size={20} />
             </a>
             <a href="#features" className="btn btn-outline btn-lg">
-              Learn More
+              Pelajari Lebih Lanjut
             </a>
           </div>
         </div>
@@ -37,9 +37,9 @@ export function LandingPage() {
 
       {/* Features Section */}
       <section id="features" className="features-section">
-        <h2 className="section-title">Why Choose Taekwondo?</h2>
+        <h2 className="section-title">Mengapa Memilih Taekwondo?</h2>
         <p className="section-subtitle">
-          Discover the life-changing benefits of martial arts training
+          Temukan manfaat luar biasa dari latihan seni bela diri
         </p>
         
         <div className="features-grid">
@@ -47,9 +47,9 @@ export function LandingPage() {
             <div className="feature-icon red">
               <Target size={40} />
             </div>
-            <h3>Discipline & Focus</h3>
+            <h3>Disiplin & Fokus</h3>
             <p>
-              Develop mental clarity and self-control through structured training and traditional martial arts philosophy.
+              Kembangkan kejernihan mental dan kontrol diri melalui latihan terstruktur dan filosofi seni bela diri tradisional yang terbukti efektif.
             </p>
           </div>
           
@@ -57,9 +57,9 @@ export function LandingPage() {
             <div className="feature-icon blue">
               <Zap size={40} />
             </div>
-            <h3>Physical Fitness</h3>
+            <h3>Kebugaran Fisik</h3>
             <p>
-              Build strength, flexibility, and endurance with dynamic workouts that challenge your entire body.
+              Bangun kekuatan, kelenturan, dan daya tahan dengan latihan dinamis yang menantang seluruh tubuh Anda secara menyeluruh.
             </p>
           </div>
           
@@ -67,9 +67,9 @@ export function LandingPage() {
             <div className="feature-icon yellow">
               <Award size={40} />
             </div>
-            <h3>Self-Defense</h3>
+            <h3>Bela Diri Praktis</h3>
             <p>
-              Learn practical self-defense techniques that boost confidence and personal safety in any situation.
+              Pelajari teknik bela diri praktis yang meningkatkan kepercayaan diri dan keamanan pribadi Anda dalam situasi apapun.
             </p>
           </div>
           
@@ -77,9 +77,9 @@ export function LandingPage() {
             <div className="feature-icon purple">
               <Users size={40} />
             </div>
-            <h3>Community</h3>
+            <h3>Komunitas Solid</h3>
             <p>
-              Join a supportive family of martial artists dedicated to growth, respect, and mutual encouragement.
+              Bergabunglah dengan keluarga besar para praktisi seni bela diri yang berdedikasi pada pertumbuhan, rasa hormat, dan saling mendukung.
             </p>
           </div>
         </div>
@@ -87,65 +87,65 @@ export function LandingPage() {
 
       {/* Programs Section */}
       <section id="programs" className="programs-section">
-        <h2 className="section-title">Our Programs</h2>
+        <h2 className="section-title">Program Kami</h2>
         <p className="section-subtitle">
-          Classes designed for every age and skill level
+          Kelas dirancang untuk semua usia dan tingkat kemampuan
         </p>
         
         <div className="programs-grid">
           <div className="program-card">
             <div className="program-header">
-              <h3>Kids Program</h3>
-              <p className="program-age">Ages 5-12</p>
+              <h3>Program Anak</h3>
+              <p className="program-age">Usia 5-12 Tahun</p>
             </div>
             <div className="program-body">
               <ul className="program-features">
-                <li>Fun and engaging classes</li>
-                <li>Character development</li>
-                <li>Anti-bullying training</li>
-                <li>Confidence building</li>
-                <li>Basic self-defense</li>
+                <li>Kelas yang menyenangkan dan engaging</li>
+                <li>Pengembangan karakter</li>
+                <li>Pelatihan anti-perundungan</li>
+                <li>Membangun kepercayaan diri</li>
+                <li>Bela diri dasar</li>
               </ul>
               <a href="#contact" className="btn btn-primary" style={{width: '100%'}}>
-                Enroll Now
+                Daftar Sekarang
               </a>
             </div>
           </div>
           
           <div className="program-card">
             <div className="program-header">
-              <h3>Teen Program</h3>
-              <p className="program-age">Ages 13-17</p>
+              <h3>Program Remaja</h3>
+              <p className="program-age">Usia 13-17 Tahun</p>
             </div>
             <div className="program-body">
               <ul className="program-features">
-                <li>Advanced techniques</li>
-                <li>Competition training</li>
-                <li>Leadership skills</li>
-                <li>Physical conditioning</li>
-                <li>Stress management</li>
+                <li>Teknik lanjutan</li>
+                <li>Pelatihan kompetisi</li>
+                <li>Keterampilan kepemimpinan</li>
+                <li>Kondisi fisik optimal</li>
+                <li>Manajemen stres</li>
               </ul>
               <a href="#contact" className="btn btn-primary" style={{width: '100%'}}>
-                Enroll Now
+                Daftar Sekarang
               </a>
             </div>
           </div>
           
           <div className="program-card">
             <div className="program-header">
-              <h3>Adult Program</h3>
-              <p className="program-age">Ages 18+</p>
+              <h3>Program Dewasa</h3>
+              <p className="program-age">Usia 18+ Tahun</p>
             </div>
             <div className="program-body">
               <ul className="program-features">
-                <li>Complete fitness workout</li>
-                <li>Self-defense mastery</li>
-                <li>Flexibility training</li>
-                <li>Belt progression system</li>
-                <li>Mind-body wellness</li>
+                <li>Latihan kebugaran menyeluruh</li>
+                <li>Penguasaan bela diri</li>
+                <li>Pelatihan kelenturan</li>
+                <li>Sistem progressi sabuk</li>
+                <li>Kesehatan pikiran-tubuh</li>
               </ul>
               <a href="#contact" className="btn btn-primary" style={{width: '100%'}}>
-                Enroll Now
+                Daftar Sekarang
               </a>
             </div>
           </div>
@@ -154,22 +154,22 @@ export function LandingPage() {
 
       {/* Testimonials Section */}
       <section id="testimonials" className="testimonials-section">
-        <h2 className="section-title">Student Success Stories</h2>
+        <h2 className="section-title">Kisah Sukses Siswa</h2>
         <p className="section-subtitle">
-          Hear from our amazing martial arts family
+          Dengarkan dari keluarga besar seni bela diri kami
         </p>
         
         <div className="testimonials-grid">
           <div className="testimonial-card">
             <div className="quote-icon">"</div>
             <p className="testimonial-content">
-              "Taekwondo has completely transformed my life. I've gained confidence, made lifelong friends, and achieved black belt status. The instructors are incredibly supportive!"
+              "Taekwondo telah sepenuhnya mengubah hidup saya. Saya mendapatkan kepercayaan diri, menemukan teman seumur hidup, dan mencapai sabuk hitam. Instruktur di sini luar biasa suportif!"
             </p>
             <div className="testimonial-author">
               <div className="author-avatar">SL</div>
               <div className="author-info">
                 <h4>Sarah Lee</h4>
-                <p>Black Belt, 3 Years Training</p>
+                <p>Sabuk Hitam, 3 Tahun Latihan</p>
               </div>
             </div>
           </div>
@@ -177,13 +177,13 @@ export function LandingPage() {
           <div className="testimonial-card">
             <div className="quote-icon">"</div>
             <p className="testimonial-content">
-              "My son has been attending for 2 years and the growth in his discipline and respect has been remarkable. Best decision we ever made for his development."
+              "Anak saya telah berlatih selama 2 tahun dan pertumbuhan dalam disiplin dan rasa hormatnya sungguh luar biasa. Keputusan terbaik yang pernah kami buat untuk perkembangannya."
             </p>
             <div className="testimonial-author">
               <div className="author-avatar">MJ</div>
               <div className="author-info">
                 <h4>Mike Johnson</h4>
-                <p>Parent of Student</p>
+                <p>Orang Tua Siswa</p>
               </div>
             </div>
           </div>
@@ -191,13 +191,13 @@ export function LandingPage() {
           <div className="testimonial-card">
             <div className="quote-icon">"</div>
             <p className="testimonial-content">
-              "The adult program is fantastic! Great workout, stress relief, and I've learned practical self-defense skills. The community here is like a second family."
+              "Program dewasa sangat fantastis! Latihan yang hebat, menghilangkan stres, dan saya telah mempelajari keterampilan bela diri praktis. Komunitas di sini seperti keluarga kedua."
             </p>
             <div className="testimonial-author">
               <div className="author-avatar">EC</div>
               <div className="author-info">
                 <h4>Emily Chen</h4>
-                <p>Red Belt, Adult Program</p>
+                <p>Sabuk Merah, Program Dewasa</p>
               </div>
             </div>
           </div>
@@ -207,19 +207,19 @@ export function LandingPage() {
       {/* CTA Section */}
       <section id="contact" className="cta-section">
         <div className="cta-content">
-          <h2 className="cta-title">Begin Your Journey Today</h2>
+          <h2 className="cta-title">Mulai Perjalanan Anda Hari Ini</h2>
           <p className="cta-subtitle">
-            Join hundreds of students who have transformed their lives through Taekwondo
+            Bergabunglah dengan ratusan siswa yang telah mengubah hidup mereka melalui Taekwondo
           </p>
           <form className="cta-form" onSubmit={(e) => e.preventDefault()}>
             <input 
               type="email" 
-              placeholder="Enter your email" 
+              placeholder="Masukkan email Anda" 
               className="cta-input"
               required
             />
             <button type="submit" className="btn btn-primary btn-lg">
-              Get Started
+              Mulai Sekarang
             </button>
           </form>
         </div>
@@ -231,30 +231,30 @@ export function LandingPage() {
           <div className="footer-section">
             <h3>TAEKWONDO</h3>
             <p>
-              Building strong minds and bodies through the discipline of martial arts since 2015.
+              Membangun pikiran dan tubuh yang kuat melalui disiplin seni bela diri sejak 2015.
             </p>
           </div>
           
           <div className="footer-section">
-            <h3>Quick Links</h3>
+            <h3>Tautan Cepat</h3>
             <ul className="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#programs">Programs</a></li>
-              <li><a href="#features">Features</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#programs">Program</a></li>
+              <li><a href="#features">Fitur</a></li>
+              <li><a href="#testimonials">Testimoni</a></li>
             </ul>
           </div>
           
           <div className="footer-section">
-            <h3>Contact</h3>
-            <p>📍 123 Martial Arts Way</p>
-            <p>📞 (555) 123-4567</p>
+            <h3>Kontak</h3>
+            <p>📍 Jl. Seni Bela Diri No. 123</p>
+            <p>📞 (021) 123-4567</p>
             <p>✉️ info@taekwondo.com</p>
           </div>
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2024 Taekwondo Management System. All rights reserved.</p>
+          <p>&copy; 2024 Sistem Manajemen Taekwondo. Hak Cipta Dilindungi.</p>
         </div>
       </footer>
     </div>

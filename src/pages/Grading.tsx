@@ -26,7 +26,7 @@ export function Grading() {
       }
       return s;
     }));
-    alert('Student promoted successfully!');
+    alert('Siswa berhasil dinaikkan tingkat!');
   };
 
   const getBeltColor = (belt: string) => {
@@ -55,27 +55,27 @@ export function Grading() {
               <div className="student-info">
                 <h3>{student.name}</h3>
                 <div className="current-belt">
-                  Current: <span className={`belt-badge belt-${student.belt}`}>{student.belt} Belt</span>
+                  Saat Ini: <span className={`belt-badge belt-${student.belt}`}>Sabuk {student.belt === 'White' ? 'Putih' : student.belt === 'Yellow' ? 'Kuning' : student.belt === 'Green' ? 'Hijau' : student.belt === 'Blue' ? 'Biru' : student.belt === 'Red' ? 'Merah' : 'Hitam'}</span>
                 </div>
               </div>
 
               {nextBelt ? (
                 <>
                   <div className="next-belt-info">
-                    <p>Eligible for promotion to:</p>
+                    <p>Memenuhi syarat untuk naik ke:</p>
                     <div className="flex items-center gap-2">
-                      <strong>{nextBelt} Belt</strong>
+                      <strong>Sabuk {nextBelt === 'White' ? 'Putih' : nextBelt === 'Yellow' ? 'Kuning' : nextBelt === 'Green' ? 'Hijau' : nextBelt === 'Blue' ? 'Biru' : nextBelt === 'Red' ? 'Merah' : 'Hitam'}</strong>
                       <ChevronRight size={14} className="text-gray-400" />
                     </div>
                   </div>
                   <button className="promote-btn" onClick={() => handlePromote(student.id)}>
                     <Award size={18} />
-                    Promote Student
+                    Naikkan Tingkat
                   </button>
                 </>
               ) : (
                 <div className="next-belt-info">
-                  <p>Highest belt rank achieved.</p>
+                  <p>Tingkat sabuk tertinggi telah dicapai.</p>
                 </div>
               )}
             </div>

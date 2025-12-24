@@ -24,7 +24,7 @@ export interface ClassSession {
 }
 
 export const MOCK_CLASSES: ClassSession[] = [
-  { id: '101', name: 'Kids Foundation', date: '2025-12-24', time: '16:00', instructor: 'Master Kim' },
-  { id: '102', name: 'Adults Advanced', date: '2025-12-24', time: '18:30', instructor: 'Master Lee' },
-  { id: '103', name: 'Sparring Drill', date: '2025-12-25', time: '17:00', instructor: 'Master Park' },
+  { id: '101', name: 'Kelas Dasar Anak', date: '2025-12-24', time: '16:00', instructor: 'Master Kim' },
+  { id: '102', name: 'Kelas Lanjutan Dewasa', date: '2025-12-24', time: '18:30', instructor: 'Master Lee' },
+  { id: '103', name: 'Latihan Sparring', date: '2025-12-25', time: '17:00', instructor: 'Master Park' },
 ];

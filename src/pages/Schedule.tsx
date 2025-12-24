@@ -27,7 +27,7 @@ export function Schedule() {
             <div className="class-body">
               <div className="info-row">
                 <Calendar size={18} />
-                <span>{new Date(cls.date).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}</span>
+                <span>{new Date(cls.date).toLocaleDateString('id-ID', { weekday: 'long', month: 'long', day: 'numeric' })}</span>
               </div>
               <div className="info-row">
                 <User size={18} />

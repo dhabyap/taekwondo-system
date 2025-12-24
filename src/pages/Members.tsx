@@ -42,7 +42,7 @@ export function Members() {
         <div className="search-bar">
           <input 
             type="text" 
-            placeholder="Search students..." 
+            placeholder="Cari siswa..." 
             className="search-input"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
@@ -51,7 +51,7 @@ export function Members() {
         </div>
         <button className="btn btn-primary" onClick={() => setIsModalOpen(true)}>
           <Plus size={18} style={{ marginRight: '8px' }} />
-          Add Member
+          Tambah Anggota
         </button>
       </div>
 
@@ -59,29 +59,29 @@ export function Members() {
         <table className="members-table">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Belt</th>
-              <th>Age</th>
-              <th>Join Date</th>
+              <th>Nama</th>
+              <th>Sabuk</th>
+              <th>Usia</th>
+              <th>Tanggal Bergabung</th>
               <th>Status</th>
-              <th>Actions</th>
+              <th>Aksi</th>
             </tr>
           </thead>
           <tbody>
             {filteredStudents.map(student => (
               <tr key={student.id}>
                 <td>{student.name}</td>
-                <td><span className={`belt-badge belt-${student.belt}`}>{student.belt} Belt</span></td>
+                <td><span className={`belt-badge belt-${student.belt}`}>Sabuk {student.belt === 'White' ? 'Putih' : student.belt === 'Yellow' ? 'Kuning' : student.belt === 'Green' ? 'Hijau' : student.belt === 'Blue' ? 'Biru' : student.belt === 'Red' ? 'Merah' : 'Hitam'}</span></td>
                 <td>{student.age}</td>
                 <td>{student.joinDate}</td>
                 <td>
                   <span className={`status-badge status-${student.status}`}>
                     <span style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: 'currentColor' }}></span>
-                    {student.status}
+                    {student.status === 'Active' ? 'Aktif' : 'Tidak Aktif'}
                   </span>
                 </td>
                 <td>
-                  <button className="text-sm text-blue-600 hover:underline">Edit</button>
+                  <button className="text-sm text-blue-600 hover:underline">Ubah</button>
                 </td>
               </tr>
             ))}
@@ -93,12 +93,12 @@ export function Members() {
         <div className="modal-overlay" onClick={() => setIsModalOpen(false)}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>
             <div className="flex justify-between items-center mb-4">
-              <h2 className="text-xl font-bold">Add New Student</h2>
+              <h2 className="text-xl font-bold">Tambah Siswa Baru</h2>
               <button onClick={() => setIsModalOpen(false)}><X size={24} /></button>
             </div>
             <form onSubmit={handleAddStudent}>
               <div className="form-group">
-                <label>Full Name</label>
+                <label>Nama Lengkap</label>
                 <input 
                   type="text" 
                   required
@@ -107,7 +107,7 @@ export function Members() {
                 />
               </div>
               <div className="form-group">
-                <label>Age</label>
+                <label>Usia</label>
                 <input 
                   type="number" 
                   required
@@ -116,22 +116,22 @@ export function Members() {
                 />
               </div>
               <div className="form-group">
-                <label>Belt Rank</label>
+                <label>Tingkat Sabuk</label>
                 <select 
                   value={newStudent.belt}
                   onChange={e => setNewStudent({...newStudent, belt: e.target.value as any})}
                 >
-                  <option value="White">White</option>
-                  <option value="Yellow">Yellow</option>
-                  <option value="Green">Green</option>
-                  <option value="Blue">Blue</option>
-                  <option value="Red">Red</option>
-                  <option value="Black">Black</option>
+                  <option value="White">Putih</option>
+                  <option value="Yellow">Kuning</option>
+                  <option value="Green">Hijau</option>
+                  <option value="Blue">Biru</option>
+                  <option value="Red">Merah</option>
+                  <option value="Black">Hitam</option>
                 </select>
               </div>
               <div className="flex justify-end gap-2 mt-6">
-                <button type="button" className="btn" onClick={() => setIsModalOpen(false)}>Cancel</button>
-                <button type="submit" className="btn btn-primary">Save Member</button>
+                <button type="button" className="btn" onClick={() => setIsModalOpen(false)}>Batal</button>
+                <button type="submit" className="btn btn-primary">Simpan Anggota</button>
               </div>
             </form>
           </div>

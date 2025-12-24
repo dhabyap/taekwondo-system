@@ -11,23 +11,23 @@ export function Sidebar() {
       <nav className="sidebar-nav">
         <NavLink to="/admin" end className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <LayoutDashboard size={20} />
-          <span>Dashboard</span>
+          <span>Beranda</span>
         </NavLink>
         <NavLink to="/admin/members" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <Users size={20} />
-          <span>Members</span>
+          <span>Anggota</span>
         </NavLink>
         <NavLink to="/admin/attendance" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <UserCheck size={20} />
-          <span>Attendance</span>
+          <span>Kehadiran</span>
         </NavLink>
         <NavLink to="/admin/schedule" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <Calendar size={20} />
-          <span>Schedule</span>
+          <span>Jadwal</span>
         </NavLink>
         <NavLink to="/admin/grading" className={({ isActive }) => `nav-item ${isActive ? 'active' : ''}`}>
           <Award size={20} />
-          <span>Grading</span>
+          <span>Kenaikan Sabuk</span>
         </NavLink>
       </nav>
     </aside>
